@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- =======CONTATO DE NUMERO DO  INPUT ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- Tailwind CSS Compilado -->
+    <link href="dist/output.css" rel="stylesheet" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Qualifica Cursos</title>
+  </head>
+  <body>
+    <div id="cronometro" class="cronometro"></div>
+    <div id="notificacoes" class="notificacoes"></div>
+
+    <img src="assets/img/banner-teste.jpg" alt="image" class="bg__image" />
+    <div class="bg__blur"></div>
+
+    <!--==================== HEADER ====================-->
+    <!-- <header class="header" id="header">
+      <div class="header__content">
+        <a href="#" class="header__logo">Cursos Gratuitos</a>
+      </div>
+    </header> -->
+
+    <!--=============== NAVBAR ===============-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li>
+          <a
+            href="https://www.linkedin.com/company/drestagio/"
+            class="nav__link active-link"
+          >
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/drestagio/" class="nav__link">
+            <i class="ri-instagram-fill"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://youtube.com/@drestagio" class="nav__link">
+            <i class="ri-youtube-fill"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://drestagio.gupy.io/" class="nav__link">
+            <i class="ri-megaphone-fill"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--==================== DASHBOARD ====================-->
+    <main class="main">
+      <!--==================== BANNER ====================-->
+      <section class="banner">
+        <article class="banner__card">
+          <a href="#" class="banner__link">
+            <img src="assets/img/banner.jpg" alt="image" class="banner__img" />
+            <div class="banner__shadow"></div>
+            <div class="banner__data">
+              <h2 class="banner__title">Cursos</h2>
+              <span class="banner__category">Gratuitos</span>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <!--==================== MOVIES ====================-->
+      <section class="movie">
+        <h3 class="card__title">Cursos</h3>
+
+        <div class="movie__swiper swiper">
+          <div class="swiper-wrapper">
+            <!-- Marketing Course -->
+            <article
+              class="card__article swiper-slide"
+              onclick="showCard('Marketing', 'No Varejo', 'Descubra as estratégias que impulsionam o sucesso no varejo. Com o nosso curso de Marketing, você estará preparado para atrair mais clientes e fortalecer sua marca. O mercado nunca esteve tão competitivo — esteja um passo à frente!')"
+            >
+              <a href="#" class="card__link">
+                <img
+                  src="assets/img/course-4.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+                <div class="card__data">
+                  <h3 class="card__name">Marketing</h3>
+                  <span class="card__category">No Varejo</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Operador de Caixa Course -->
+            <article
+              class="card__article swiper-slide"
+              onclick="showCard('Operador de', 'Caixa', 'Neste curso, você aprenderá o que é necessário para se destacar como operador de caixa, aprimorando suas habilidades de atendimento ao cliente e gestão de vendas. Prepare-se para fazer parte de uma equipe essencial no varejo!')"
+            >
+              <a href="#" class="card__link">
+                <img
+                  src="assets/img/course-3.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+                <div class="card__data">
+                  <h3 class="card__name">Operador de Caixa</h3>
+                  <span class="card__category">Caixa</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Introdução à Informática Course -->
+            <article
+              class="card__article swiper-slide"
+              onclick="showCard('Introdução à', 'Informática', 'Domine as ferramentas básicas de informática e abra as portas para um futuro mais tecnológico. Este curso é o primeiro passo para habilidades mais avançadas, preparando você para um mercado cada vez mais digital.')"
+            >
+              <a href="#" class="card__link">
+                <img
+                  src="assets/img/COURSE-1.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+                <div class="card__data">
+                  <h3 class="card__name">Introdução à</h3>
+                  <span class="card__category">Informática</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Entrevista de Emprego Course -->
+            <article
+              class="card__article swiper-slide"
+              onclick="showCard('Entrevista de', 'Emprego', 'Neste curso, você vai adquirir as habilidades essenciais para se destacar nas entrevistas e alcançar lugares ainda mais distantes em sua carreira. Mire alto e atinja novos horizontes profissionais com nossas técnicas e dicas exclusivas.')"
+            >
+              <a href="#" class="card__link">
+                <img
+                  src="assets/img/course-2.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+                <div class="card__data">
+                  <h3 class="card__name">Entrevista de Emprego</h3>
+                  <span class="card__category">Emprego</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dynamic Card -->
+      <div class="card" id="info-card" style="display: none">
+        <button class="close-btn" onclick="closeCard()">
+          Continuar Navegando
+        </button>
+        <div class="card-content">
+          <h3 id="card-title">Valuable Info</h3>
+          <h1 id="card-subtitle"></h1>
+          <p id="card-desc">More details about the course will go here...</p>
+          <a href="#form-section"
+            ><button id="card-action-btn">Quero fazer o curso</button></a
+          >
+        </div>
+      </div>
+
+      <!-- FORM -->
+
+      <div class="Form-title">
+        <p class="title">Cadastre-se para garantir sua vaga</p>
+        <p class="message">Vagas limitadas.</p>
+      </div>
+      <section class="section-form" id="form-section">
+        <form class="form" id="myForm">
+          <label>
+            <input
+              class="input"
+              type="text"
+              id="fullName"
+              placeholder=""
+              required
+            />
+            <span>Nome Completo</span>
+          </label>
+
+          <label>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              placeholder=""
+              required
+            />
+            <span>Email</span>
+          </label>
+          <label>
+            <input
+              class="input"
+              id="phone"
+              type="tel"
+              maxlength="19"
+              placeholder=""
+              required
+            />
+          </label>
+          <h3>Endereço</h3>
+          <label>
+            <input class="input" type="text" id="rua" placeholder="" required />
+            <span>Rua</span>
+          </label>
+
+          <div class="flex">
+            <label>
+              <input
+                class="input"
+                type="text"
+                id="bairro"
+                placeholder=""
+                required
+              />
+              <span>Bairro</span>
+            </label>
+            <label>
+              <input
+                class="input"
+                type="text"
+                id="cidade"
+                placeholder=""
+                required
+              />
+              <span>Cidade</span>
+            </label>
+            <label>
+              <input
+                class="input"
+                type="text"
+                id="estado"
+                placeholder=""
+                required
+              />
+              <span>Estado</span>
+            </label>
+          </div>
+
+          <!-- Radios -->
+          <h3>Você está trabalhando?</h3>
+          <div class="radio-input">
+            <label class="label">
+              <input
+                type="radio"
+                id="trabalhando-sim"
+                name="value-radio"
+                value="Sim"
+              />
+              <p class="text">Sim</p>
+            </label>
+            <label class="label">
+              <input
+                type="radio"
+                id="trabalhando-nao"
+                name="value-radio"
+                value="Não"
+              />
+              <p class="text">Não</p>
+            </label>
+          </div>
+
+          <button type="submit" class="submit">Enviar</button>
+
+          <div class="checkbox-wrapper-46">
+            <input type="checkbox" id="cbx-46" class="inp-cbx" />
+            <label for="cbx-46" class="cbx">
+              <span>
+                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
+              <span
+                >Eu concordo em fornecer meus dados para o envio deste
+                formulário, autorizando o uso das informações de acordo com a
+                política de privacidade</span
+              >
+            </label>
+          </div>
+
+          <div id="message" style="display: none">
+            Formulário enviado com sucesso!
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Background Blur Effect -->
+    <div class="blur-overlay" id="blur-overlay" style="display: none"></div>
+
+    <!--====== EMAILJS===== -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("baI18Pq9tHqmhsX62"); // Substitua pela sua chave pública
+      })();
+    </script>
+
+    <!-- =======FORMATO DO INPUT NUMERO DE CONTATO =============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
